@@ -1,0 +1,22 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": ["post", "get"]
+    },
+    {
+      "type": "signalRConnectionInfo",
+      "name": "signalRConnectionInfo",
+      "direction": "in",
+      "hubName": "voting"
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    }
+  ]
+}
